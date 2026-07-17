@@ -1,0 +1,140 @@
+export interface MockVendor {
+  id: string;
+  business_name: string;
+  category: string;
+  description: string;
+  location: string;
+  rating: number;
+  review_count: number;
+  is_verified: boolean;
+  photos: string[];
+  website?: string;
+  instagram?: string;
+  packages: {
+    name: string;
+    price: number;
+    description: string;
+  }[];
+}
+
+export const mockVendors: MockVendor[] = [
+  {
+    id: "v1",
+    business_name: "Lagos Grand Venue",
+    category: "venue",
+    description:
+      "An opulent waterfront event space in Victoria Island, featuring crystal chandeliers, marble finishes, and panoramic ocean views. Capacity for 1,200 guests.",
+    location: "Victoria Island, Lagos",
+    rating: 4.9,
+    review_count: 124,
+    is_verified: true,
+    photos: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+      "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80",
+    ],
+    packages: [
+      { name: "Silver Hall", price: 2_500_000, description: "Half-day rental, 200 guests" },
+      { name: "Gold Hall", price: 5_000_000, description: "Full-day rental, 500 guests" },
+      { name: "Platinum Suite", price: 12_000_000, description: "Full weekend, 1,200 guests" },
+    ],
+  },
+  {
+    id: "v2",
+    business_name: "Elegance by Efe",
+    category: "decoration",
+    description:
+      "Award-winning luxury event styling and décor. Specializing in bespoke floral arrangements, lighting design, and immersive thematic transformations.",
+    location: "Ikoyi, Lagos",
+    rating: 4.8,
+    review_count: 89,
+    is_verified: true,
+    photos: [
+      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
+      "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&q=80",
+    ],
+    packages: [
+      { name: "Classic Décor", price: 1_500_000, description: "Floral centerpieces, draping, lighting" },
+      { name: "Luxury Transformation", price: 4_000_000, description: "Full venue redesign, custom installations" },
+    ],
+  },
+  {
+    id: "v3",
+    business_name: "Savoir Faire Catering",
+    category: "catering",
+    description:
+      "Continental and indigenous haute cuisine by Chef Amara. Every dish is a work of art, using the finest local and imported ingredients.",
+    location: "Lekki, Lagos",
+    rating: 4.9,
+    review_count: 203,
+    is_verified: true,
+    photos: [
+      "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80",
+      "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+    ],
+    packages: [
+      { name: "Tasting Menu", price: 800_000, description: "5-course, 50 guests" },
+      { name: "Grand Buffet", price: 2_000_000, description: "8-course, 150 guests" },
+      { name: "Imperial Service", price: 6_000_000, description: "Full waitstaff, 300 guests" },
+    ],
+  },
+  {
+    id: "v4",
+    business_name: "Lens & Legacy",
+    category: "photography",
+    description:
+      "Premium photography and cinematography with a fine-art editorial approach. We capture the poetry of your most important moments.",
+    location: "Abuja",
+    rating: 4.7,
+    review_count: 67,
+    is_verified: true,
+    photos: [
+      "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+      "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=80",
+    ],
+    packages: [
+      { name: "Essentials", price: 500_000, description: "6 hours, 300 edited photos" },
+      { name: "Luxury", price: 1_200_000, description: "12 hours, 2 photographers, album" },
+      { name: "Cinematic", price: 3_000_000, description: "Full film + photography team" },
+    ],
+  },
+  {
+    id: "v5",
+    business_name: "Harmony & Strings",
+    category: "music",
+    description:
+      "Nigeria's premier live music ensemble. From string quartets to full orchestras and contemporary Afrobeats bands, we set the perfect tone.",
+    location: "Lagos / Abuja",
+    rating: 4.8,
+    review_count: 95,
+    is_verified: true,
+    photos: [
+      "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=80",
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+    ],
+    packages: [
+      { name: "Soloist", price: 350_000, description: "Solo pianist or harpist" },
+      { name: "Quartet", price: 900_000, description: "String quartet, 3 hours" },
+      { name: "Grand Ensemble", price: 3_500_000, description: "12-piece band + sound" },
+    ],
+  },
+  {
+    id: "v6",
+    business_name: "Gold & Glow Beauty",
+    category: "makeup",
+    description:
+      "Celebrity makeup artistry and bridal styling. We create signature looks that radiate confidence and sophistication.",
+    location: "Victoria Island, Lagos",
+    rating: 4.6,
+    review_count: 143,
+    is_verified: false,
+    photos: [
+      "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80",
+      "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&q=80",
+    ],
+    packages: [
+      { name: "Bridal Trial", price: 150_000, description: "Consultation + trial look" },
+      { name: "Bridal Full", price: 500_000, description: "Bridal + 3 bridesmaids" },
+      { name: "VIP Glam", price: 1_200_000, description: "Full bridal party + mother" },
+    ],
+  },
+];

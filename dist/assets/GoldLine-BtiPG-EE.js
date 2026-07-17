@@ -1,0 +1,1 @@
+import{j as n,c as s}from"./index-C3BdtSY9.js";function a({thick:e,shimmer:i,className:r}){return n.jsx("hr",{className:s("gold-line",e&&"thick",i&&"shimmer-line",r),"aria-hidden":!0})}export{a as G};
